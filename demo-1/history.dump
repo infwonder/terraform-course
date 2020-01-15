@@ -1,0 +1,1711 @@
+    1  sudo apt-get update
+    2  curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/linux/amd64/kubectl
+    3  ls
+    4  chmod +x kubectl 
+    5  sudo mv kubectl /usr/local/bin/
+    6  curl -LO https://github.com/kubernetes/kops/releases/download/1.16.0-alpha.1/kops-linux-amd64
+    7  ls
+    8  chmod +x kops
+    9  chmod +x kops-linux-amd64 
+   10  sudo mv kops-linux-amd64 /usr/local/bin/kops
+   11  kops
+   12  kubectl
+   13  sudo apt-get install python-pip
+   14  sudo pip install awsctl
+   15  sudo pip install awscli
+   16  exit
+   17  clear
+   18  top
+   19  exit
+   20  aws --help
+   21  aws help
+   22  aws configure
+   23  ssh 192.168.99.1
+   24  aws configure
+   25  aws ec2 help
+   26  aws ec2 describe-availability-zones
+   27  cd 
+   28  cd .ssh
+   29  ls
+   30  cd ..
+   31  ssh-keygen -b 8192
+   32  ssh 192.168.0.8
+   33  which nmap
+   34  sudo su -
+   35  exit
+   36  whoami
+   37  exit
+   38  which git
+   39  curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64
+   40  ls
+   41  chod +x skaffold 
+   42  chmod +x skaffold 
+   43  ls
+   44  sudo mv skaffold /usr/local/bin/
+   45  cd /usr/local/bin
+   46  ls
+   47  cd
+   48  s
+   49  ls
+   50  kops
+   51  ls
+   52  pwd
+   53  ls
+   54  curl https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
+   55  curl -oL https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
+   56  ls -lrt
+   57  mv L terraform_0.12.18_linux_amd64.zip
+   58  ls
+   59  ls -lrt
+   60  unzip terraform_0.12.18_linux_amd64.zip 
+   61  sudo apt-get install unzip
+   62  unzip terraform_0.12.18_linux_amd64.zip 
+   63  ls 
+   64  ls -l
+   65  sudo mv terraform /usr/bin
+   66  which terraform
+   67  terraform
+   68  apt-get upgrade
+   69  sudo apt-get upgrade
+   70  exit
+   71  kubectl get node
+   72  exit
+   73  aws --help
+   74  aws help
+   75  aws 
+   76  aws iam help
+   77  ls -lrta
+   78  cd .aws/
+   79  ls
+   80  ls -la
+   81  cat credentials 
+   82  clear
+   83  cd
+   84  ls -lre
+   85  ls -lrt
+   86  rm terraform_0.12.18_linux_amd64.zip 
+   87  ls
+   88  aws region
+   89  aws ec2 region
+   90  aws ec2 help
+   91  aws ec2 describe-regions
+   92  aws ec2 help
+   93  aws help
+   94  aws ec2 help
+   95  aws
+   96  aws ec2
+   97  aws ec2 help
+   98  aws help
+   99  aws ec2 describe-regions|less
+  100  ls
+  101  which git
+  102  git clone https://github.com/wardviaene/terraform-course.git
+  103  ls
+  104  rm -fr terraform-course/
+  105  git clone https://github.com/infwonder/terraform-course.git
+  106  ls
+  107  cd terraform-course/
+  108  ls
+  109  cd first-steps/
+  110  ls
+  111  vi instance.tf 
+  112  aws ami
+  113  aws ami help
+  114  aws help|less
+  115  ls
+  116  cat instance.tf 
+  117  vi instance.tf 
+  118  ls
+  119  vi versions.tf 
+  120  ls
+  121  terraform init
+  122  terraform apply
+  123  terraform destroy
+  124  cd ..
+  125  cd demo-1
+  126  ls
+  127  ls -l
+  128  cat versions.tf 
+  129  ls
+  130  vi instance.tf 
+  131  ls
+  132  vi provider.tf 
+  133  ls
+  134  cat vars.tf 
+  135  ls
+  136  vi vars.tf 
+  137  ls
+  138  vi instance.tf 
+  139  ls
+  140  vi provider.tf 
+  141  ls
+  142  vi variables.tfvars
+  143  mv variables.tfvars terraform.tfvars
+  144  cat ~/.aws/credentials 
+  145  vi terraform.tfvars 
+  146  ls
+  147  cat provider.tf 
+  148  vi terraform.tfvars 
+  149  ls
+  150  vi vars.tf 
+  151  ls
+  152  vd provider.tf 
+  153  vi provider.tf 
+  154  vi vars.tf 
+  155  ls
+  156  vi provider.tf 
+  157  ls
+  158  vi vi instance.tf 
+  159  ls
+  160  vi instance.tf 
+  161  ls
+  162  vi keypair.tf
+  163  ls
+  164  vi vars.tf 
+  165  cat terraform.tfvars 
+  166  vi vars.tf 
+  167  vi terraform.tfvars 
+  168  ls
+  169  vi keypair.tf 
+  170  vi vars.tf 
+  171  cat terraform.tfvars 
+  172  clear
+  173  ls
+  174  terraform init
+  175  terraform plan
+  176  terraform plan -var terraform.tfvars 
+  177  terraform plan -var-file terraform.tfvars 
+  178  ls
+  179  vi terraform.tfvars 
+  180  terraform plan -var-file terraform.tfvars 
+  181  vi terraform.tfvars 
+  182  ls
+  183  vi vars.tf 
+  184  terraform plan -var-file terraform.tfvars 
+  185  vi vars.tf 
+  186  ls
+  187  vi keypair.tf 
+  188  vi instance.tf 
+  189  ls
+  190  vi terraform.tfvars 
+  191  terraform plan
+  192  vi instance.tf 
+  193  terraform plan -out changes.terraform
+  194  ls
+  195  vi output.tf
+  196  terraform plan -out changes.terraform
+  197  ls -lrt
+  198  cat output.tf 
+  199  terraform apply changes.terraform 
+  200  cat keypair.tf 
+  201  terraform apply changes.terraform 
+  202  ls
+  203  vi terraform.tfvars 
+  204  ls
+  205  vi provider.tf 
+  206  ls
+  207  rm terraform.tfstate 
+  208  ls
+  209  vi terraform.tfvars 
+  210  terraform plan -out changes.terraform
+  211  terraform import aws_key_pair vagrant
+  212  terraform import aws_key_pair.vagrant
+  213  terraform import aws_key_pair.vagrant vagrant
+  214  aws ec2 help
+  215  aws ec2 describe-key-pairs
+  216  aws ec2 describe-regions
+  217  ls
+  218  aws ec2 describe-regions
+  219  cd
+  220  aws ec2 describe-regions
+  221  cat ~/.aws/credentials 
+  222  ls
+  223  aws help
+  224  aws ec2 help
+  225  aws ec2 describe-regions
+  226  ping google.com
+  227  ls
+  228  cd terraform-course/
+  229  ls
+  230  cd first-steps/
+  231  ls
+  232  aws configure get
+  233  aws configure get region
+  234  aws configure help
+  235  aws configure list
+  236  aws ec2 describe-region
+  237  aws ec2 describe-regions
+  238  aws configure
+  239  aws ec2 describe-regions
+  240  date
+  241  systemctl status --all|grep time
+  242  apropos time
+  243  date
+  244  timedatectl 
+  245  timedatectl status
+  246  timedatectl help
+  247  systemctl status timesyncd
+  248  systemctl start timesyncd
+  249  sudo -i
+  250  cd ..
+  251  ls
+  252  cd demo-
+  253  cd demo-1
+  254  terraform plan -out changes.terraform 
+  255  aws ec2 describe-region
+  256  terraform apply changes.terraform 
+  257  terraform destroy
+  258  aws ec2 help|less
+  259  aws ec2 describe-reserved-instances-listings
+  260  aws ec2 describe-instances
+  261  aws ec2 help|less
+  262  aws ec2 terminate-instances help
+  263  ls
+  264  rm *.tfstat.*
+  265  ls
+  266  rm terraform.tfstate terraform.tfstate.backup 
+  267  ls
+  268  terraform plan -out changes.terraform 
+  269  terraform apply changes.terraform 
+  270  ssh -l ubuntu -i ~/.ssh/id_rsa 18.191.247.160
+  271  terraform destroy
+  272  ls
+  273  vi instance.tf 
+  274  terraform plan -out changes.terraform 
+  275  terraform apply changes.terraform 
+  276  ssh -l ubuntu -i ~/.ssh/id_rsa 18.216.124.189
+  277  ssh -l ubuntu -i ~/.ssh/id_rsa ec2-18-216-124-189.us-east-2.compute.amazonaws.com
+  278  host ec2-18-216-124-189.us-east-2.compute.amazonaws.com
+  279  ssh -l ubuntu -i ~/.ssh/id_rsa -vvvvv ec2-18-216-124-189.us-east-2.compute.amazonaws.com
+  280  ls
+  281  ls ~/.ssh
+  282  ls ~/.ssh -l
+  283  ssh -l ubuntu -i ~/.ssh/id_rsa -vvvvv ec2-18-216-124-189.us-east-2.compute.amazonaws.com
+  284  terraform destroy
+  285  ls
+  286  vi instance.tf 
+  287  ls
+  288  vi vars.tf 
+  289  terraform plan -out changes.terraform 
+  290  vi vars.tf 
+  291  terraform plan -out changes.terraform 
+  292  vi vars.tf 
+  293  terraform plan -out changes.terraform 
+  294  terraform apply changes.terraform 
+  295  ssh -l ubuntu -i ~/.ssh/id_rsa -vvvvv ec2-13-59-195-123.us-east-2.compute.amazonaws.com
+  296  ls
+  297  terraform destroy
+  298  ls
+  299  vi instance.tf 
+  300  ls
+  301  cd ..
+  302  ls
+  303  vi .gitignore 
+  304  git status
+  305  vi .gitignore 
+  306  git status
+  307  git add .
+  308  git status
+  309  git diff --cached
+  310  ls
+  311  git commit -a -m"expanding from course repo"
+  312  git config --global user.email "infwonder@gmail.com"
+  313  git config --global user.email "infwonder"
+  314  git commit -a -m"expanding from course repo"
+  315  git config --global user.email "infwonder@gmail.com"
+  316  git config --global user.name "infwonder"
+  317  git commit -a -m"expanding from course repo"
+  318  git push origin master
+  319  ls
+  320  vi README.md 
+  321  ls
+  322  cd demo-
+  323  cd demo-1
+  324  ls
+  325  vi vars.tf
+  326  ls
+  327  vi instance.tf 
+  328  terraform plan
+  329  vi instance.tf 
+  330  ls
+  331  vi vars.tf 
+  332  ls
+  333  vi instance.tf 
+  334  ls
+  335  cat output.tf 
+  336  vi output.tf 
+  337  ls
+  338  vi instance.tf 
+  339  ls
+  340  vi instance.tf 
+  341  ls
+  342  vi vars.tf 
+  343  ls
+  344  grep -ir instance_list *
+  345  vi instance.tf 
+  346  vi vars.tf 
+  347  ls
+  348  vi instance.tf 
+  349  vi output.tf 
+  350  terraform plan
+  351  vi instance.tf 
+  352  ls
+  353  vi output.tf 
+  354  terraform plan
+  355  vi output.tf 
+  356  terraform plan
+  357  vi output.tf 
+  358  terraform plan
+  359  vi output.tf 
+  360  ls
+  361  vi instance.tf 
+  362  terraform plan
+  363  vi instance.tf 
+  364  terraform plan
+  365  vi instance.tf 
+  366  ls
+  367  vi vars.tf 
+  368  ls
+  369  vi output.tf 
+  370  vi instance.tf 
+  371  ls
+  372  cat output.tf 
+  373  vi output.tf 
+  374  ls
+  375  vi ansible_hosts.tpl
+  376  ls
+  377  cat ansible_hosts.tpl 
+  378  vi output.tf 
+  379  terraform plan
+  380  ls
+  381  vi output.tf 
+  382  terraform plan
+  383  ls
+  384  vi ansible_hosts.tpl 
+  385  vi output.tf 
+  386  ls
+  387  terraform plan
+  388  terraform init
+  389  terraform plan
+  390  terraform plan -out changes.terraform 
+  391  aws ec2 describe-regions
+  392  ls
+  393  terraform plan
+  394  terraform plan -out changes.terraform 
+  395  terraform apply changes.terraform 
+  396  ls -lrt
+  397  cals -lrt
+  398  ls -lrt
+  399  vi ansible_hosts
+  400  ls
+  401  ls -lrt
+  402  terraform status
+  403  terraform state
+  404  terraform state list
+  405  terraform state show
+  406  ls
+  407  cat ansible_hosts
+  408  vi ansible_hosts
+  409  ls
+  410  sudo -i
+  411  ls
+  412  vi instance.tf 
+  413  ls
+  414  vi output.tf 
+  415  terraform plan
+  416  ls
+  417  vi vars.tf 
+  418  ls
+  419  vi output.tf 
+  420  vi vars.tf 
+  421  vi output.tf 
+  422  ls
+  423  vi output.tf 
+  424  vi vars.tf 
+  425  terraform plan
+  426  terraform plan -out changes.terraform 
+  427  terraform apply changes.terraform 
+  428  host k8smaster.k8s.11be.org
+  429  ls
+  430  vi ansible_hosts
+  431  cp ansible_hosts /etc/ansible/hosts 
+  432  sudo -i
+  433  ls
+  434  ssh-keyscan k8smaster.k8s.11be.org
+  435  ssh-keyscan k8smaster.k8s.11be.org >> ~/.ssh/known_hosts 
+  436  ssh-keyscan k8snode01.k8s.11be.org >> ~/.ssh/known_hosts 
+  437  ssh-keyscan k8snode02.k8s.11be.org >> ~/.ssh/known_hosts 
+  438  ls
+  439  cd ..
+  440  cd -
+  441  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  442  cd ..
+  443  cd .
+  444  cd ..
+  445  ls
+  446  git clone https://github.com/infwonder/libvirt-terraform-k8s-lab.git
+  447  ls
+  448  cd libvirt-terraform-k8s-lab/
+  449  ls
+  450  cd kubernetes/
+  451  ls
+  452  cd ansible/
+  453  ls
+  454  vi test-playbook.yml 
+  455  cat reset-playbook.yml 
+  456  cat README.md 
+  457  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  458  vi test-playbook.yml 
+  459  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  460  vi test-playbook.yml 
+  461  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  462  vi test-playbook.yml 
+  463  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  464  vi test-playbook.yml 
+  465  echo aa.bb.cc.dd|awk -f "." {print $1}
+  466  echo aa.bb.cc.dd|awk -d "." "{print $1}"
+  467  man awk
+  468  echo aa.bb.cc.dd|awk -F "." "{print $1}"
+  469  echo aa.bb.cc.dd|awk -F \. "{print $1}"
+  470  echo aa.bb.cc.dd|awk -F '.' "{print $1}"
+  471  echo aa.bb.cc.dd|awk -F '.' "{print $0}"
+  472  echo aa.bb.cc.dd|awk -F '.' "{print $1}"
+  473  echo aa.bb.cc.dd|awk -F '.' "{print $1}" -
+  474  echo aa bb cc dd|awk "{print $1}" 
+  475  echo aa bb cc dd|awk '{print $1}'
+  476  echo aa bb cc dd|awk -F . '{print $1}'
+  477  echo aa.bb.cc.dd|awk -F . '{print $1}'
+  478  ls
+  479  vi test-playbook.yml 
+  480  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  481  vi test-playbook.yml 
+  482  ls
+  483  less node-playbook.yml 
+  484  less master-playbook.yml 
+  485  vi test-playbook.yml 
+  486  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  487  vi test-playbook.yml 
+  488  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  489  vi test-playbook.yml 
+  490  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  491  ls
+  492  cat test-playbook.yml 
+  493  vi node-playbook.yml 
+  494  ls
+  495  vi node-playbook.yml 
+  496  ls
+  497  vi test-command
+  498  echo "$(cat ./test-command)"
+  499  echo "$(cat ./test-command) --test aha"
+  500  cat test-command 
+  501  vi test-command 
+  502  ls
+  503  rm test-
+  504  rm test-command 
+  505  vi node-playbook.yml 
+  506  ls
+  507  ansible-playbook packages-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  508  ls
+  509  #ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  510  vi master-playbook.yml 
+  511  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  512  vi master-playbook.yml 
+  513  cd ..
+  514  ls
+  515  cd terraform-course/demo-1
+  516  terraform states
+  517  terraform state list
+  518  terraform destroy
+  519  vi provider.tf 
+  520  terraform destroy
+  521  aws ec2 describe-regions
+  522  sudo -i
+  523  aws ec2 describe-regions
+  524  terraform destroy
+  525  ls
+  526  vi instance.tf 
+  527  ls
+  528  vi output.tf 
+  529  vi route53.tf
+  530  ls
+  531  vi output.tf 
+  532  ls
+  533  vi output.tf 
+  534  ls
+  535  rm ansible_hosts ansible_hosts.tpl 
+  536  ls
+  537  terraform init
+  538  terraform plan
+  539  terraform plan -out changes.terraform 
+  540  cat instance.tf 
+  541  terraform apply changes.terraform 
+  542  vi ~/.ssh/known_hosts 
+  543  ssh-keyscan k8smaster.k8s.11be.org
+  544  ssh-keyscan k8smaster.k8s.11be.org >> ~/.ssh/known_hosts 
+  545  ssh-keyscan k8snode01.k8s.11be.org >> ~/.ssh/known_hosts 
+  546  ssh-keyscan k8snode02.k8s.11be.org >> ~/.ssh/known_hosts 
+  547  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  548  scp -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org:~/admin.conf ~/.kube/
+  549  scp -i ~/.ssh/id_rsa ubuntu@k8smaster.k8s.11be.org:~/admin.conf ~/.kube/
+  550  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  551  scp -i ~/.ssh/id_rsa ubuntu@k8smaster.k8s.11be.org:~/admin.conf ~/.kube/
+  552  ls
+  553  export KUBECONFIG=$HOME/.kube/admin.conf
+  554  kubectl get node
+  555  ls
+  556  vi ~/.kube/admin.conf 
+  557  kubectl get node
+  558  vi ~/.kube/admin.conf 
+  559  rm ~/.kube/ -fr
+  560  ls
+  561  terraform destroy
+  562  terraform plan
+  563  terraform plan -out changes.terraform 
+  564  terraform apply changes.terraform 
+  565  vi ~/.ssh/known_hosts 
+  566  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  567  ssh-keyscan k8smaster.k8s.11be.org >> ~/.ssh/known_hosts 
+  568  ssh-keyscan k8snode01.k8s.11be.org >> ~/.ssh/known_hosts 
+  569  ssh-keyscan k8snode02.k8s.11be.org >> ~/.ssh/known_hosts 
+  570  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  571  terraform state list
+  572  ls
+  573  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  574  ls
+  575  kubectl get node
+  576  kubectl get node -o wide
+  577  vi ~/.bashrc
+  578  ls
+  579  cd terraform-course/
+  580  ls
+  581  cd first-steps/
+  582  ls
+  583  cat instance.tf 
+  584  cat ~/.ssh/id_rsa.pub 
+  585  clear
+  586  cd ..
+  587  ls
+  588  cd demo-
+  589  cd demo-1
+  590  ls
+  591  mkdir ~/.kube
+  592  ssh -l ubuntu k8smaster.k8s.11be.org:~/admin.conf ~/.kube/
+  593  kubectl get node
+  594  kubectl delete pod/bash
+  595  kubectl delete pod/reader-pod
+  596  kubectl get node
+  597  cd kubernetes-course/
+  598  ls
+  599  cd ingress/
+  600  ls
+  601  kubectl apply -f echoservice.yml 
+  602  kubectl apply -f ingress-nginx-aws.yml 
+  603  cat ingress-nginx-aws.yml 
+  604  kubectl get svc -n kube-system
+  605  kubectl get pod -n kube-system
+  606  kubectl get ns
+  607  ls
+  608  kubectl apply -f nginx-ingress-controller.yml 
+  609  kubectl describe svc/ingress-nginx
+  610  kubectl delete -f nginx-ingress-controller.yml 
+  611  kubectl delete -f ingress-nginx-aws.yml 
+  612  kubectl delete -f echoservice.yml 
+  613  kubectl apply -f https://k8s.io/examples/service/load-balancer-example.yaml
+  614  kubectl expose deployment hello-world --type=LoadBalancer --name=my-service
+  615  kubectl delete -fhttps://k8s.io/examples/service/load-balancer-example.yaml
+  616  kubectl delete svc/my-service
+  617  cd ..
+  618  ls
+  619  cd aws-terraform-k8s-lab/
+  620  ls
+  621  cd kubernetes/
+  622  ls
+  623  cd ansible/
+  624  ls
+  625  vi master-playbook.yml 
+  626  cd ..
+  627  ls
+  628  cd ..
+  629  ls
+  630  cd ..
+  631  ls
+  632  cd terraform-course/demo-1
+  633  terraform destroy
+  634  terraform plan
+  635  terraform plan -out changes.terraform 
+  636  terraform apply changes.terraform 
+  637  vi ~/.ssh/known_hosts 
+  638  ssh-keyscan k8smaster.k8s.11be.org >> ~/.ssh/known_hosts 
+  639  ssh-keyscan k8snode01.k8s.11be.org >> ~/.ssh/known_hosts 
+  640  ssh-keyscan k8snode02.k8s.11be.org >> ~/.ssh/known_hosts 
+  641  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  642  clear
+  643  terraform destroy
+  644  vi ~/.ssh/known_hosts 
+  645  ls
+  646  terraform plan 
+  647  terraform plan -out changes.terraform 
+  648  terraform apply changes.terraform 
+  649  aws iam help
+  650  aws iam create-role --help
+  651  aws iam create-role help
+  652  aws iam create-role --role-name test --generate-cli-skeleton
+  653  aws iam create-policy help
+  654  aws iam create-policy --policy-name test --generate-cli-skeleton
+  655  ks
+  656  ls
+  657  vi master.iam.policy
+  658  ls
+  659  aws iam create-policy --policy-name k8smaster --policy-document ./master.iam.policy 
+  660  aws iam create-policy --policy-name k8smaster --generate-cli-skeleton
+  661  ls
+  662  vi master.iam.policy 
+  663  aws iam create-policy --policy-name k8smaster --generate-cli-skeleton
+  664  vi master.iam.policy 
+  665  aws iam create-policy --policy-name k8smaster --policy-document ./master.iam.policy 
+  666  vi master.iam.trust.policy
+  667  aws iam create-role --role-name k8s_master_node --assume-role-policy-document ./master.iam.trust.policy 
+  668  vi master.iam.trust.policy 
+  669  cat master.iam.trust.policy 
+  670  aws iam create-role --role-name k8s_master_node --assume-role-policy-document '{"Version":"2012-10-17", "Statement": {"Effect":"Allow", "Principal": {"Service": "ec2.amazonaws.com"}, "Action":"sts:AssumeRole" } }'
+  671  aws iam put-role-policy --role-name k8s_master_node --policy-name k8s_master_policies --policy-document ./master.iam.policy 
+  672  aws iam put-role-policy --role-name k8s_master_node --policy-name k8s_master_policies --policy-document file:///home/vagrant/terraform-course/demo-1/master.iam.policy 
+  673  ls
+  674  vi master.iam.policy 
+  675  aws iam put-role-policy --role-name k8s_master_node --policy-name k8s_master_policies --policy-document ./master.iam.policy 
+  676  vi master.iam.policy 
+  677  aws iam put-role-policy --role-name k8s_master_node --policy-name k8s_master_policies --policy-document ./master.iam.policy 
+  678  aws iam put-role-policy help
+  679  aws iam put-role-policy --role-name k8s_master_node --policy-name k8s_master_policies --policy-document file://master.iam.policy 
+  680  aws iam get-role-policies
+  681  aws iam list-role-policies
+  682  aws iam list-role-policies --role-name k8s_master_role
+  683  aws iam list-role-policies --role-name k8s_master_node
+  684  aws iam get-role-policy --policy-name k8s_master_policies
+  685  aws iam get-role-policy --role-name k8s_master_node --policy-name k8s_master_policies
+  686  aws iam get-role-policy --policy-name k8s_master_policies
+  687  aws iam get-role-policy --policy-name k8s_master_policies --role-name k8s_master_node
+  688  ls
+  689  ls -lrt
+  690  cat master.iam.trust.policy 
+  691  cat master.iam.policy 
+  692  vi worker.iam.policy 
+  693  ls
+  694  ls -lrt
+  695  history > history.dump
+  137  ls
+  138  vi instance.tf 
+  139  ls
+  140  vi provider.tf 
+  141  ls
+  142  vi variables.tfvars
+  143  mv variables.tfvars terraform.tfvars
+  144  cat ~/.aws/credentials 
+  145  vi terraform.tfvars 
+  146  ls
+  147  cat provider.tf 
+  148  vi terraform.tfvars 
+  149  ls
+  150  vi vars.tf 
+  151  ls
+  152  vd provider.tf 
+  153  vi provider.tf 
+  154  vi vars.tf 
+  155  ls
+  156  vi provider.tf 
+  157  ls
+  158  vi vi instance.tf 
+  159  ls
+  160  vi instance.tf 
+  161  ls
+  162  vi keypair.tf
+  163  ls
+  164  vi vars.tf 
+  165  cat terraform.tfvars 
+  166  vi vars.tf 
+  167  vi terraform.tfvars 
+  168  ls
+  169  vi keypair.tf 
+  170  vi vars.tf 
+  171  cat terraform.tfvars 
+  172  clear
+  173  ls
+  174  terraform init
+  175  terraform plan
+  176  terraform plan -var terraform.tfvars 
+  177  terraform plan -var-file terraform.tfvars 
+  178  ls
+  179  vi terraform.tfvars 
+  180  terraform plan -var-file terraform.tfvars 
+  181  vi terraform.tfvars 
+  182  ls
+  183  vi vars.tf 
+  184  terraform plan -var-file terraform.tfvars 
+  185  vi vars.tf 
+  186  ls
+  187  vi keypair.tf 
+  188  vi instance.tf 
+  189  ls
+  190  vi terraform.tfvars 
+  191  terraform plan
+  192  vi instance.tf 
+  193  terraform plan -out changes.terraform
+  194  ls
+  195  vi output.tf
+  196  terraform plan -out changes.terraform
+  197  ls -lrt
+  198  cat output.tf 
+  199  terraform apply changes.terraform 
+  200  cat keypair.tf 
+  201  terraform apply changes.terraform 
+  202  ls
+  203  vi terraform.tfvars 
+  204  ls
+  205  vi provider.tf 
+  206  ls
+  207  rm terraform.tfstate 
+  208  ls
+  209  vi terraform.tfvars 
+  210  terraform plan -out changes.terraform
+  211  terraform import aws_key_pair vagrant
+  212  terraform import aws_key_pair.vagrant
+  213  terraform import aws_key_pair.vagrant vagrant
+  214  aws ec2 help
+  215  aws ec2 describe-key-pairs
+  216  aws ec2 describe-regions
+  217  ls
+  218  aws ec2 describe-regions
+  219  cd
+  220  aws ec2 describe-regions
+  221  cat ~/.aws/credentials 
+  222  ls
+  223  aws help
+  224  aws ec2 help
+  225  aws ec2 describe-regions
+  226  ping google.com
+  227  ls
+  228  cd terraform-course/
+  229  ls
+  230  cd first-steps/
+  231  ls
+  232  aws configure get
+  233  aws configure get region
+  234  aws configure help
+  235  aws configure list
+  236  aws ec2 describe-region
+  237  aws ec2 describe-regions
+  238  aws configure
+  239  aws ec2 describe-regions
+  240  date
+  241  systemctl status --all|grep time
+  242  apropos time
+  243  date
+  244  timedatectl 
+  245  timedatectl status
+  246  timedatectl help
+  247  systemctl status timesyncd
+  248  systemctl start timesyncd
+  249  sudo -i
+  250  cd ..
+  251  ls
+  252  cd demo-
+  253  cd demo-1
+  254  terraform plan -out changes.terraform 
+  255  aws ec2 describe-region
+  256  terraform apply changes.terraform 
+  257  terraform destroy
+  258  aws ec2 help|less
+  259  aws ec2 describe-reserved-instances-listings
+  260  aws ec2 describe-instances
+  261  aws ec2 help|less
+  262  aws ec2 terminate-instances help
+  263  ls
+  264  rm *.tfstat.*
+  265  ls
+  266  rm terraform.tfstate terraform.tfstate.backup 
+  267  ls
+  268  terraform plan -out changes.terraform 
+  269  terraform apply changes.terraform 
+  270  ssh -l ubuntu -i ~/.ssh/id_rsa 18.191.247.160
+  271  terraform destroy
+  272  ls
+  273  vi instance.tf 
+  274  terraform plan -out changes.terraform 
+  275  terraform apply changes.terraform 
+  276  ssh -l ubuntu -i ~/.ssh/id_rsa 18.216.124.189
+  277  ssh -l ubuntu -i ~/.ssh/id_rsa ec2-18-216-124-189.us-east-2.compute.amazonaws.com
+  278  host ec2-18-216-124-189.us-east-2.compute.amazonaws.com
+  279  ssh -l ubuntu -i ~/.ssh/id_rsa -vvvvv ec2-18-216-124-189.us-east-2.compute.amazonaws.com
+  280  ls
+  281  ls ~/.ssh
+  282  ls ~/.ssh -l
+  283  ssh -l ubuntu -i ~/.ssh/id_rsa -vvvvv ec2-18-216-124-189.us-east-2.compute.amazonaws.com
+  284  terraform destroy
+  285  ls
+  286  vi instance.tf 
+  287  ls
+  288  vi vars.tf 
+  289  terraform plan -out changes.terraform 
+  290  vi vars.tf 
+  291  terraform plan -out changes.terraform 
+  292  vi vars.tf 
+  293  terraform plan -out changes.terraform 
+  294  terraform apply changes.terraform 
+  295  ssh -l ubuntu -i ~/.ssh/id_rsa -vvvvv ec2-13-59-195-123.us-east-2.compute.amazonaws.com
+  296  ls
+  297  terraform destroy
+  298  ls
+  299  vi instance.tf 
+  300  ls
+  301  cd ..
+  302  ls
+  303  vi .gitignore 
+  304  git status
+  305  vi .gitignore 
+  306  git status
+  307  git add .
+  308  git status
+  309  git diff --cached
+  310  ls
+  311  git commit -a -m"expanding from course repo"
+  312  git config --global user.email "infwonder@gmail.com"
+  313  git config --global user.email "infwonder"
+  314  git commit -a -m"expanding from course repo"
+  315  git config --global user.email "infwonder@gmail.com"
+  316  git config --global user.name "infwonder"
+  317  git commit -a -m"expanding from course repo"
+  318  git push origin master
+  319  ls
+  320  vi README.md 
+  321  ls
+  322  cd demo-
+  323  cd demo-1
+  324  ls
+  325  vi vars.tf
+  326  ls
+  327  vi instance.tf 
+  328  terraform plan
+  329  vi instance.tf 
+  330  ls
+  331  vi vars.tf 
+  332  ls
+  333  vi instance.tf 
+  334  ls
+  335  cat output.tf 
+  336  vi output.tf 
+  337  ls
+  338  vi instance.tf 
+  339  ls
+  340  vi instance.tf 
+  341  ls
+  342  vi vars.tf 
+  343  ls
+  344  grep -ir instance_list *
+  345  vi instance.tf 
+  346  vi vars.tf 
+  347  ls
+  348  vi instance.tf 
+  349  vi output.tf 
+  350  terraform plan
+  351  vi instance.tf 
+  352  ls
+  353  vi output.tf 
+  354  terraform plan
+  355  vi output.tf 
+  356  terraform plan
+  357  vi output.tf 
+  358  terraform plan
+  359  vi output.tf 
+  360  ls
+  361  vi instance.tf 
+  362  terraform plan
+  363  vi instance.tf 
+  364  terraform plan
+  365  vi instance.tf 
+  366  ls
+  367  vi vars.tf 
+  368  ls
+  369  vi output.tf 
+  370  vi instance.tf 
+  371  ls
+  372  cat output.tf 
+  373  vi output.tf 
+  374  ls
+  375  vi ansible_hosts.tpl
+  376  ls
+  377  cat ansible_hosts.tpl 
+  378  vi output.tf 
+  379  terraform plan
+  380  ls
+  381  vi output.tf 
+  382  terraform plan
+  383  ls
+  384  vi ansible_hosts.tpl 
+  385  vi output.tf 
+  386  ls
+  387  terraform plan
+  388  terraform init
+  389  terraform plan
+  390  terraform plan -out changes.terraform 
+  391  aws ec2 describe-regions
+  392  ls
+  393  terraform plan
+  394  terraform plan -out changes.terraform 
+  395  terraform apply changes.terraform 
+  396  ls -lrt
+  397  cals -lrt
+  398  ls -lrt
+  399  vi ansible_hosts
+  400  ls
+  401  ls -lrt
+  402  terraform status
+  403  terraform state
+  404  terraform state list
+  405  terraform state show
+  406  ls
+  407  cat ansible_hosts
+  408  vi ansible_hosts
+  409  ls
+  410  sudo -i
+  411  ls
+  412  vi instance.tf 
+  413  ls
+  414  vi output.tf 
+  415  terraform plan
+  416  ls
+  417  vi vars.tf 
+  418  ls
+  419  vi output.tf 
+  420  vi vars.tf 
+  421  vi output.tf 
+  422  ls
+  423  vi output.tf 
+  424  vi vars.tf 
+  425  terraform plan
+  426  terraform plan -out changes.terraform 
+  427  terraform apply changes.terraform 
+  428  host k8smaster.k8s.11be.org
+  429  ls
+  430  vi ansible_hosts
+  431  cp ansible_hosts /etc/ansible/hosts 
+  432  sudo -i
+  433  ls
+  434  ssh-keyscan k8smaster.k8s.11be.org
+  435  ssh-keyscan k8smaster.k8s.11be.org >> ~/.ssh/known_hosts 
+  436  ssh-keyscan k8snode01.k8s.11be.org >> ~/.ssh/known_hosts 
+  437  ssh-keyscan k8snode02.k8s.11be.org >> ~/.ssh/known_hosts 
+  438  ls
+  439  cd ..
+  440  cd -
+  441  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  442  cd ..
+  443  cd .
+  444  cd ..
+  445  ls
+  446  git clone https://github.com/infwonder/libvirt-terraform-k8s-lab.git
+  447  ls
+  448  cd libvirt-terraform-k8s-lab/
+  449  ls
+  450  cd kubernetes/
+  451  ls
+  452  cd ansible/
+  453  ls
+  454  vi test-playbook.yml 
+  455  cat reset-playbook.yml 
+  456  cat README.md 
+  457  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  458  vi test-playbook.yml 
+  459  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  460  vi test-playbook.yml 
+  461  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  462  vi test-playbook.yml 
+  463  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  464  vi test-playbook.yml 
+  465  echo aa.bb.cc.dd|awk -f "." {print $1}
+  466  echo aa.bb.cc.dd|awk -d "." "{print $1}"
+  467  man awk
+  468  echo aa.bb.cc.dd|awk -F "." "{print $1}"
+  469  echo aa.bb.cc.dd|awk -F \. "{print $1}"
+  470  echo aa.bb.cc.dd|awk -F '.' "{print $1}"
+  471  echo aa.bb.cc.dd|awk -F '.' "{print $0}"
+  472  echo aa.bb.cc.dd|awk -F '.' "{print $1}"
+  473  echo aa.bb.cc.dd|awk -F '.' "{print $1}" -
+  474  echo aa bb cc dd|awk "{print $1}" 
+  475  echo aa bb cc dd|awk '{print $1}'
+  476  echo aa bb cc dd|awk -F . '{print $1}'
+  477  echo aa.bb.cc.dd|awk -F . '{print $1}'
+  478  ls
+  479  vi test-playbook.yml 
+  480  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  481  vi test-playbook.yml 
+  482  ls
+  483  less node-playbook.yml 
+  484  less master-playbook.yml 
+  485  vi test-playbook.yml 
+  486  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  487  vi test-playbook.yml 
+  488  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  489  vi test-playbook.yml 
+  490  ansible-playbook test-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  491  ls
+  492  cat test-playbook.yml 
+  493  vi node-playbook.yml 
+  494  ls
+  495  vi node-playbook.yml 
+  496  ls
+  497  vi test-command
+  498  echo "$(cat ./test-command)"
+  499  echo "$(cat ./test-command) --test aha"
+  500  cat test-command 
+  501  vi test-command 
+  502  ls
+  503  rm test-
+  504  rm test-command 
+  505  vi node-playbook.yml 
+  506  ls
+  507  ansible-playbook packages-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  508  ls
+  509  #ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  510  vi master-playbook.yml 
+  511  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  512  vi master-playbook.yml 
+  513  cd ..
+  514  ls
+  515  cd terraform-course/demo-1
+  516  terraform states
+  517  terraform state list
+  518  terraform destroy
+  519  vi provider.tf 
+  520  terraform destroy
+  521  aws ec2 describe-regions
+  522  sudo -i
+  523  aws ec2 describe-regions
+  524  terraform destroy
+  525  ls
+  526  vi instance.tf 
+  527  ls
+  528  vi output.tf 
+  529  vi route53.tf
+  530  ls
+  531  vi output.tf 
+  532  ls
+  533  vi output.tf 
+  534  ls
+  535  rm ansible_hosts ansible_hosts.tpl 
+  536  ls
+  537  terraform init
+  538  terraform plan
+  539  terraform plan -out changes.terraform 
+  540  cat instance.tf 
+  541  terraform apply changes.terraform 
+  542  vi ~/.ssh/known_hosts 
+  543  ssh-keyscan k8smaster.k8s.11be.org
+  544  ssh-keyscan k8smaster.k8s.11be.org >> ~/.ssh/known_hosts 
+  545  ssh-keyscan k8snode01.k8s.11be.org >> ~/.ssh/known_hosts 
+  546  ssh-keyscan k8snode02.k8s.11be.org >> ~/.ssh/known_hosts 
+  547  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  548  scp -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org:~/admin.conf ~/.kube/
+  549  scp -i ~/.ssh/id_rsa ubuntu@k8smaster.k8s.11be.org:~/admin.conf ~/.kube/
+  550  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  551  scp -i ~/.ssh/id_rsa ubuntu@k8smaster.k8s.11be.org:~/admin.conf ~/.kube/
+  552  ls
+  553  export KUBECONFIG=$HOME/.kube/admin.conf
+  554  kubectl get node
+  555  ls
+  556  vi ~/.kube/admin.conf 
+  557  kubectl get node
+  558  vi ~/.kube/admin.conf 
+  559  rm ~/.kube/ -fr
+  560  ls
+  561  terraform destroy
+  562  terraform plan
+  563  terraform plan -out changes.terraform 
+  564  terraform apply changes.terraform 
+  565  vi ~/.ssh/known_hosts 
+  566  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  567  ssh-keyscan k8smaster.k8s.11be.org >> ~/.ssh/known_hosts 
+  568  ssh-keyscan k8snode01.k8s.11be.org >> ~/.ssh/known_hosts 
+  569  ssh-keyscan k8snode02.k8s.11be.org >> ~/.ssh/known_hosts 
+  570  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  571  terraform state list
+  572  ls
+  573  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  574  ls
+  575  kubectl get node
+  576  kubectl get node -o wide
+  577  vi ~/.bashrc
+  578  ls
+  579  cd terraform-course/
+  580  ls
+  581  cd first-steps/
+  582  ls
+  583  cat instance.tf 
+  584  cat ~/.ssh/id_rsa.pub 
+  585  clear
+  586  cd ..
+  587  ls
+  588  cd demo-
+  589  cd demo-1
+  590  ls
+  591  mkdir ~/.kube
+  592  ssh -l ubuntu k8smaster.k8s.11be.org:~/admin.conf ~/.kube/
+  593  kubectl get node
+  594  kubectl delete pod/bash
+  595  kubectl delete pod/reader-pod
+  596  ls
+  597  cd libvirt-terraform-k8s-lab/kubernetes/
+  598  ls
+  599  cd ansible/
+  600  ls
+  601  cat README.md 
+  602  ansible-playbook packages-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  603  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  604  ls
+  605  cat join-command 
+  606  cd ..
+  607  ls
+  608  cd kubernetes/
+  609  ls
+  610  cd ansible/
+  611  ls
+  612  rm join-command kubeconfig/ -fr
+  613  ls
+  614  vi master-playbook.yml 
+  615  ls
+  616  vi test-playbook.yml 
+  617  ls
+  618  vi master-playbook.yml 
+  619  ansible-playbook packages-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  620  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  621  host k8smaster.k8s.11be.org
+  622  man host
+  623  host -t A k8smaster.k8s.11be.org
+  624  man host
+  625  host k8smaster.k8s.11be.org
+  626  host k8smaster.k8s.11be.org|grep -E "[0-9.]"
+  627  host k8smaster.k8s.11be.org|grep -E "[0-9.]{4}"
+  628  host k8smaster.k8s.11be.org|grep -E "[0-9.]+{4}"
+  629  host k8smaster.k8s.11be.org|grep -o -E "[0-9.]+{4}"
+  630  ls
+  631  vi master-playbook.yml 
+  632  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  633  ls
+  634  vi master-playbook.yml 
+  635  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  636  export KUBECONFIG=/home/vagrant/.kube/admin.conf 
+  637  kubectl get node
+  638  vi ~/.kube/admin.conf 
+  639  kubectl get node
+  640  ls
+  641  cat join-command 
+  642  cat node-playbook.yml 
+  643  ansible-playbook node-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  644  vi node-playbook.yml 
+  645  ls
+  646  cat master-playbook.yml 
+  647  vi node-playbook.yml 
+  648  ansible-playbook node-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  649  vi node-playbook.yml 
+  650  ansible-playbook node-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  651  vi node-playbook.yml 
+  652  man bash
+  653  ansible-playbook node-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  654  kubectl get node
+  655  cd ..
+  656  ls
+  657  git clone https://github.com/infwonder/aws-terraform-k8s-lab.git
+  658  rsync -vr libvirt-terraform-k8s-lab/kubernetes aws-terraform-k8s-lab/
+  659  cd aws-terraform-k8s-lab/
+  660  ls
+  661  tree
+  662  ls -l
+  663  ls -l kubernetes/
+  664  ls -l kubernetes/ansible/
+  665  ls -l kubernetes/ansible/ -la
+  666  cd kubernetes/ansible/
+  667  ls
+  668  rm join-command kubeconfig/ -fr
+  669  ls
+  670  cd ..
+  671  ls
+  672  cd ..
+  673  ls
+  674  rsync -vr ../terraform-course/demo-1 ./terraform
+  675  cd terraform/
+  676  ls
+  677  mv demo-1/* .
+  678  rmdir demo-1/
+  679  cd demo-1/
+  680  ls -la
+  681  cd ..
+  682  rm -fr demo-1/
+  683  ls -la
+  684  rm *.tfstate
+  685  rm *.tfstate.backup
+  686  ls
+  687  rm terraform.tfvars 
+  688  ls
+  689  cp ../../terraform-course/.gitignore ..
+  690  cd ..
+  691  ls
+  692  ls -la
+  693  git status
+  694  git add .
+  695  git status
+  696  git commit -a -m"publishing implementation"
+  697  git push origin master
+  698  ls
+  699  cd kubernetes/ansible/
+  700  ls
+  701  vi reset-playbook.yml 
+  702  ls
+  703  vi master-playbook.yml 
+  704  wcho $KUBECONFIG
+  705  echo $KUBECONFIG
+  706  kubectl get pod
+  707  kubectl get node
+  708  ls
+  709  cd ..
+  710  ls
+  711  cd ..
+  712  ls
+  713  cd ..
+  714  ls
+  715  cd terraform-course/demo-1
+  716  ls
+  717  cd ..
+  718  ls
+  719  cd ..
+  720  ls
+  721  cd libvirt-terraform-k8s-lab/
+  722  ls
+  723  cd kubernetes/ansible/
+  724  ls
+  725  rm join-command kubeconfig/ -fr
+  726  ls
+  727  cd ..
+  728  ls
+  729  cd ..
+  730  ls
+  731  cd ..
+  732  ls
+  733  cd aws-terraform-k8s-lab/
+  734  ls
+  735  cd kubernetes/
+  736  ls
+  737  cd ansible/
+  738  ls
+  739  ansible-playbook packages-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  740  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  741  kubectl get node
+  742  vi ~/.kube/admin.conf 
+  743  kubectl get node
+  744  clear
+  745  ansible-playbook node-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  746  kubectl get node
+  747  watch -n1 kubectl get node
+  748  ls
+  749  cd ..
+  750  ls
+  751  cd ..
+  752  ls
+  753  cd ..
+  754  ls
+  755  git clone https://github.com/infwonder/kubernetes-course.git
+  756  cd kubernetes-course/
+  757  ls
+  758  ls -lrt
+  759  cd optract/
+  760  ls
+  761  cd ..
+  762  ls
+  763  cd ingress/
+  764  ls
+  765  vi ingress-nginx-service.yml 
+  766  ls
+  767  cd ..
+  768  ls
+  769  cd optract/
+  770  ls
+  771  vi k8s-optract-restful.yml 
+  772  ls
+  773  vi k8s-optract-reader.yml 
+  774  ls
+  775  vi k8s-optract-restful.yml 
+  776  ls
+  777  cd ..
+  778  ls
+  779  cd ..
+  780  ls
+  781  ls -lrt
+  782  cd kubernetes-course/
+  783  ls
+  784  cd ingress/
+  785  ls
+  786  vi ingress.yml 
+  787  ls
+  788  vi ingress-nginx-service.yml 
+  789  ls
+  790  vi ingress-nginx-service.yml 
+  791  ls
+  792  cd ..
+  793  ls
+  794  cd optract/
+  795  ls
+  796  less k8s-optract-restful.yml 
+  797  kubectl get node
+  798  kubectl get node -o wide
+  799  ls
+  800  vi k8s-optract-restful.yml 
+  801  cd ..
+  802  ls
+  803  cd ingress/
+  804  ;ls
+  805  ls
+  806  cp ingress-nginx-service.yml ingress-nginx-aws.yml
+  807  vi ingress
+  808  vi ingress-nginx-aws.yml 
+  809  ls
+  810  vi nginx-ingress-controller.yml 
+  811  ls
+  812  vi ingress-nginx-aws.yml 
+  813  kubectl apply -f echoservice.yml 
+  814  kubectl apply -f ingress-nginx-aws.yml 
+  815  vi ingress-nginx-aws.yml 
+  816  ls
+  817  cat ingress-nginx-service.yml 
+  818  vi ingress-nginx-aws.yml 
+  819  kubectl apply -f ingress-nginx-aws.yml 
+  820  kubectl apply -f nginx-ingress-controller.yml 
+  821  cd ..
+  822  cd optract/
+  823  ls
+  824  kubectl apply -f k8s-optract-ipfs.yml 
+  825  kubectl apply -f k8s-optract-reader.yml 
+  826  kubectl run -it --image=infwonder/optract-reader --restart=Never --command -- bash
+  827  kubectl run -it --image=infwonder/optract-reader --restart=Never reader-pod --command  -- bash
+  828  kubectl run -it --image=infwonder/optract-reader --restart=Never reader-pod --command sh
+  829  kubectl run --help
+  830  kubectl run --help|less
+  831  kubectl logs pod/optract-reader-895cd969-22mtm
+  832  kubectl describe pod/optract-reader-895cd969-22mtm
+  833  ls
+  834  vi k8s-optract-restful.yml 
+  835  kubectl describe svc/ingress-nginx
+  836  kubectl edit svc/ingress-nginx
+  837  ls
+  838  cd ..
+  839  ls
+  840  cd ingress/
+  841  ls
+  842  vi ingress-nginx-aws.yml 
+  843  cd ..
+  844  cd optract/
+  845  ls
+  846  kubectl apply -f k8s-optract-restful.yml 
+  847  kubectl logs svc/ingress-nginx
+  848  kubectl get svc -o wide
+  849  cd ..
+  850  ls
+  851  ls -lrt
+  852  cd ingress/
+  853  ls
+  854  vi ingress-nginx-aws.yml 
+  855  ls
+  856  cd ..
+  857  ls
+  858  cd kubernetes-course/
+  859  ls
+  860  cd elb-tls/
+  861  ls
+  862  cd ..
+  863  ls
+  864  cd users/
+  865  ls
+  866  cd ..
+  867  ls
+  868  kubectl logs pod/optract-restful-565557d7f-rgh8v
+  869  kubectl describe pod/optract-restful-565557d7f-rgh8v
+  870  kubectl delete -f optract/k8s-optract-restful.yml 
+  871  kubectl delete -f ingress/ingress-nginx-aws.yml 
+  872  kubectl applingress/ingress-nginx-aws.yml 
+  873  kubectl describe svc/ingress-nginx
+  874  cd ..
+  875  ls
+  876  cd aws-terraform-k8s-lab/
+  877  ls
+  878  cd kubernetes/ansible/
+  879  ls
+  880  ansible-playbook packages-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  881  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  882  ansible-playbook node-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  883  ls
+  884  vi ~/.kube/admin.conf 
+  885  kubectl get node
+  886  ls
+  887  rm join-command kubeconfig/ -fr
+  888  ansible-playbook packages-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  889  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  890  ansible-playbook node-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  891  kubectl get node
+  892  vi ~/.kube/admin.conf 
+  893  kubectl get node
+  894  ls
+  895  kubectl get node
+  896  aws ec2 describe-regions
+  897  aws iam help
+  898  aws iam get-role
+  899  aws iam get-role help
+  900  aws iam get-role kops
+  901  aws iam get-role --role-name kops
+  902  aws iam help
+  903  aws iam get-user
+  904  aws iam get-user-policy
+  905  aws iam get-user-policy --user-name kops
+  906  aws iam list-user-policy --user-name kops
+  907  aws iam list-user-policies --user-name kops
+  908  aws iam list-roles
+  909  aws iam list-roles|less
+  910  aws iam list-role
+  911  aws iam list-roles
+  912  aws iam list-roles|less
+  913  ls
+  914  aws iam create-policy help
+  915  cd Pr
+  916  ls
+  917  cd terraform-course/demo-1
+  918  terraform state
+  919  terraform state list
+  920  terraform destroy
+  921  terraform plan
+  922  vi iam.tf 
+  923  terraform plan
+  924  vi iam.tf 
+  925  terraform plan
+  926  vi iam.tf 
+  927  terraform plan
+  928  vi iam.tf 
+  929  terraform plan
+  930  terraform plan -out changes.terraform 
+  931  aws ec2 describe-regions
+  932  sudo /usr/sbin/VBoxService --timesync-set-start
+  933  aws ec2 describe-regions
+  934  terraform plan -out changes.terraform 
+  935  terraform apply changes.terraform 
+  936  ls
+  937  vi ~/.kube/admin.conf 
+  938  ls -lrt
+  939  watch -n1 -- "
+kubectl get node -o wide;
+echo;
+kubectl get pod -o wide;
+echo kubectl get svc -o wide;
+  940  watch -n1 -- "
+kubectl get node -o wide;
+echo;
+kubectl get pod -o wide;
+echo; kubectl get svc -o wide;
+kubectl get ingress -o wide;
+"
+  941  watch -n1 -- "
+kubectl get node -o wide;
+echo;
+kubectl get pod -o wide;
+echo; kubectl get svc -o wide;
+echo; kubectl get ingress -o wide;
+"
+  942  terraform destroy
+  943  terraform apply changes.terraform 
+  944  terraform plan
+  945  terraform plan -out changes.terraform 
+  946  terraform apply changes.terraform 
+  947  cd ..
+  948  ls
+  949  cd aws-terraform-k8s-lab/kubernetes/ansible/
+  950  less master-playbook.yml 
+  951  cd ~/.kube/
+  952  vi -R admin.conf 
+  953  ls
+  954  cd ..
+  955  cd aws-terraform-k8s-lab/kubernetes/ansible/
+  956  clear
+  957  cd ..
+  958  cd .
+  959  cd ..
+  960  ls
+  961  cd terraform-course/demo-1
+  962  ls
+  963  less master.iam.
+  964  ls
+  965  cd ..
+  966  cd aws-terraform-k8s-lab/terraform/a
+  967  cd aws-terraform-k8s-lab/terraform/an
+  968  cd aws-terraform-k8s-lab/terraform/
+  969  ls
+  970  cd ..
+  971  ls
+  972  cd kubernetes/
+  973  ls
+  974  cd ansible/
+  975  ls
+  976  less master-playbook.yml 
+  977  ansible-playbook master-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  978  ls
+  979  vi reset-playbook.yml 
+  980  ansible-playbook reset-playbook.yml --verbose --private-key ~/.ssh/id_rsa -u ubuntu --become --become-user root
+  981  ls
+  982  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  983  ssh -l ubuntu -i ~/.ssh/id_rsa k8snode01.k8s.11be.org
+  984  ssh -l ubuntu -i ~/.ssh/id_rsa k8snode02.k8s.11be.org
+  985  ssh -l ubuntu -i ~/.ssh/id_rsa k8smaster.k8s.11be.org
+  986  cd ..
+  987  cd .
+  988  cd ..
+  989  ls
+  990  ls -lrt
+  991  cd terraform-course/demo-1
+  992  terraform destroy
+  993  sudo /usr/sbin/VBoxService --timesync-set-start
+  994  terraform destroy
+  995  cd ..
+  996  cd 
+  997  wget https://github.com/kubernetes/kops/releases/download/1.16.0-alpha.2/kops-linux-amd64
+  998  ls -lrt
+  999  sha256sum k
+ 1000  sha256sum kops-linux-amd64 
+ 1001  chmod +x kops-linux-amd64 
+ 1002  mv kops-linux-amd64 /usr/bin/kops
+ 1003  sudo mv kops-linux-amd64 /usr/bin/kops
+ 1004  kops --help
+ 1005  ls ~/.aws
+ 1006  host -t NS k8s.11be.org
+ 1007  kops
+ 1008  #kops create cluster --name k8s.11be.org --state=s3://kops-states-8635c5dc --zones=us-east-2a --node-count
+ 1009  kops create --help
+ 1010  kops create cluster --name k8s.11be.org --state=s3://kops-states-8635c5dc --zones=us-east-2a --node-count=2 --node-size=t2.medium --master-size=t2.medium --dns-zone=k8s.11be.org
+ 1011  ls -lrt
+ 1012  kops
+ 1013  kops export --help
+ 1014  kops export kubecfg k8s.11be.org
+ 1015  kops export kubecfg k8s.11be.org --state=s3://kops-states-8635c5dc
+ 1016  kops get 
+ 1017  kops get cluster
+ 1018  kops get clusters
+ 1019  kops get cluster --state=s3://kops-states-8635c5dc
+ 1020  aws ec2 describe-regions
+ 1021  kops get cluster --state=s3://kops-states-8635c5dc
+ 1022  kops export kubecfg k8s.11be,org
+ 1023  kops export kubecfg k8s.11be.org
+ 1024  kops export kubecfg k8s.11be.org --state=s3://kops-states-8635c5dc
+ 1025  kops describe --help
+ 1026  kops get cluster --state=s3://kops-states-8635c5dc
+ 1027  kops update cluster k8s.11be.org --yes
+ 1028  kops update cluster k8s.11be.org --yes --state=s3://kops-states-8635c5dc
+ 1029  kubectl get node
+ 1030  kubectl get nodes --show-labels
+ 1031  ls -lrta
+ 1032  ls -lrta .kube/
+ 1033  less ~/.kube/admin.conf 
+ 1034  clear
+ 1035  kubectl get nodes --show-labels
+ 1036  kops describe cluster k8s.11be.org --state=s3://kops-states-8635c5dc
+ 1037  kubectl get nodes --show-labels
+ 1038  ls
+ 1039  cd 
+ 1040  ls -lrt
+ 1041  cd kubernetes-course/cd
+ 1042  cd
+ 1043  cd .kube/
+ 1044  ls
+ 1045  ls -la
+ 1046  less admin.conf 
+ 1047  kubectl get nodes --show-labels
+ 1048  kubectl get nodes 
+ 1049  kubectl describe configmaps/kubeadm-config
+ 1050  kubectl describe configmaps/kubeadm
+ 1051  kubectl describe configmaps/kubeadm-configs
+ 1052  kubectl describe configmaps/kubeadm-config -n kube-system
+ 1053  kubectl describe configmaps/kubeadm-configs -n kube-system
+ 1054  kops edit cluster k8s.11be.org
+ 1055  kops edit cluster k8s.11be.org --state=s3://kops-states-8635c5dc
+ 1056  kubectl get nodes 
+ 1057  kubectl get nodes --show-label
+ 1058  kubectl get nodes --show-labels
+ 1059  clear
+ 1060  kubectl get nodes --show-labels
+ 1061  ls
+ 1062  cd
+ 1063  ls
+ 1064  ls -lrt
+ 1065  cd kubernetes-course/
+ 1066  ls
+ 1067  cd ingress/
+ 1068  ls
+ 1069  kubectl apply -f echoservice.yml 
+ 1070  kubectl get pod
+ 1071  kubectl get pod -o wide
+ 1072  ls
+ 1073  kubectl apply -f ingress-nginx-aws.yml 
+ 1074  kubectl apply -f nginx-ingress-controller.yml 
+ 1075  cd ..
+ 1076  cd optract/
+ 1077  ls
+ 1078  kubectl apply -f k8s-optract-ipfs.yml 
+ 1079  kubectl describe svc/ingress-nginx
+ 1080  ls
+ 1081  cd ..
+ 1082  cd aws-terraform-k8s-lab/terraform/kops/
+ 1083  ls
+ 1084  terraform destroy
+ 1085  kops create cluster --name k8s.11be.org --state=s3://kops-states-8635c5dc --zones=us-east-2a --node-count=2 --node-size=t2.medium --master-size=t2.medium --dns-zone=k8s.11be.org --out=. --target terraform
+ 1086  ls
+ 1087  ls -lrt
+ 1088  mkdir autogen
+ 1089  mv kubernetes.tf data/ autogen/
+ 1090  ls
+ 1091  ls -lrt
+ 1092  cd autogen/
+ 1093  ls
+ 1094  vi kubernetes.tf 
+ 1095  ls
+ 1096  cd data
+ 1097  ls
+ 1098  vi aws_iam_role_masters.k8s.11be.org_policy 
+ 1099  ls
+ 1100  vi aws_iam_role_policy_masters.k8s.11be.org_policy 
+ 1101  ls
+ 1102  vi aws_iam_role_policy_nodes.k8s.11be.org_policy 
+ 1103  ls
+ 1104  less aws_launch_configuration_master-us-east-2a.masters.k8s.11be.org_user_data 
+ 1105  ls
+ 1106  cd ..
+ 1107  ls
+ 1108  vi kubernetes.tf 
+ 1109  ls
+ 1110  vi kubernetes.tf 
+ 1111  ls
+ 1112  terraform init
+ 1113  vi kubernetes.tf 
+ 1114  terraform plan
+ 1115  vi kubernetes.tf 
+ 1116  terraform plan
+ 1117  vi kubernetes.tf 
+ 1118  terraform plan
+ 1119  vi kubernetes.tf 
+ 1120  terraform plan
+ 1121  vi kubernetes.tf 
+ 1122  terraform plan
+ 1123  terraform init
+ 1124  terraform plan
+ 1125  vi kubernetes.tf 
+ 1126  terraform plan
+ 1127  ls
+ 1128  vi kubernetes.tf 
+ 1129  terraform plan
+ 1130  terraform plan -out changes.terraform
+ 1131  terraform apply  changes.terraform
+ 1132  kubectl get node
+ 1133  ls
+ 1134  cd ..
+ 1135  ls
+ 1136  history >> history.dump 
